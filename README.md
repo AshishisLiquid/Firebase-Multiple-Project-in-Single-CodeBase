@@ -6,7 +6,7 @@ deploy.sh :
 
 Deployment Without Function Updated only deploy firebase hosting deployment for test.
 
-*Command* :
+<b>Command</b> :
 ./deploy.sh
  2. Deployment With Function :
 It helps with proper testing functionality. Deployment of function work with suffix as Test.
