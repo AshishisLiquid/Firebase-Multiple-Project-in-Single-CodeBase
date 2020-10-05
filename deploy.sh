@@ -9,8 +9,7 @@ deploymentFunctions(){
     else
         result="$mainstring$testKeyWord"
     fi
-    echo $result
-    # firebase deploy --only functions:$result
+    firebase deploy --only functions:$result
 }
 productionFunctions(){
     mainstring=$1
@@ -19,8 +18,7 @@ productionFunctions(){
         newstr=${mainstring#*:}
         result=$newstr
     fi
-    echo $result
-    # firebase deploy --only functions:$result
+    firebase deploy --only functions:$result
 }
 str=$@ 
 if [ -z "$str" ]; then
